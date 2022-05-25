@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	body{background: black; }
+	*{margin: 0; padding: 0; box-sizing: border-box;}
+	.wraper {display: flex; align-items: center; justify-content: center; min-height: 100vh;}
+	.wraper .card {background:black; width: 365px; height:80px; border-radius: 10px; justify-content: space-between; align-items: center; box-shadow: 0 0 5px white; padding: 20px; color: white; position: absolute; opacity:0; pointer-events: none; animation: kara 15s linear infinite; animation-delay: calc(3s * var(--delay)); }
+	.wraper:hover .card {animation-play-state: paused;}
+	.wraper .card {animation-play-state: running; cursor: pointer;}
+	.wraper .card:last-child {animation-delay: calc(-3s * var(--delay));}
+	@keyframes kara {0%{opacity: 0; transform: translateY(100%) scale(0.5);}
+   5%,20%{opacity: 0.4; transform: translateY(100%) scale(0.7);}
+   25%,40%{opacity:1; pointer-events: auto; transform: translateY(0%) scale(1);}
+   45%,60%{opacity: 0.4; transform: translateY( 
+   	-100%) scale(0.7);}
+  65%,100%{opacity: 0; transform: translateY(-100%) scale(0.5);}
+	} 
+	
+	.content {display: flex; align-items: center; top: -5px; position: relative; left: -4px;}
+
+
+	img {height:50px; width: 50px; position:relative; align-items: center;  border-radius: 50%; object-fit: cover; box-shadow: 0 0 4px white;}
+	.kapsa {font-family: bold; font-weight: bold; left:14px; position: relative;}
+	h3 {font-size: 19px;}
+	h4 {font-size: 13px; opacity: 0.6;}
+	label {width: 100px; height: 32px; background: black; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-family: bold; font-weight: bold; box-shadow: 0 0 5px white;cursor: pointer; position: absolute; display: flex; flex-direction: column; left: 233px;}
+	label:hover {transform: scale(1.03);}
+</style>
+</head>
+<body>
+<div class="wraper">
+	<div class="card" style="--delay:-1;">
+		<div class="content">
+			<img src="https://media-exp1.licdn.com/dms/image/C4E03AQELlZAx3ZmQjg/profile-displayphoto-shrink_100_100/0/1560946142781?e=1655942400&v=beta&t=cVY_ManU971DePIkGE4rzgDGoRGWRFAxSPYBaa4Pa9w"><div class="kapsa"><h3>OLİVİA LİU</h3><h4>DATA SCIENCE</h4></div><label>FOLLOW</label>
+		</div>
+	</div>
+
+	<div class="card" style="--delay:0;">
+		<div class="content">
+			<img src=https://media-exp1.licdn.com/dms/image/C4D03AQGKa37bwUjckg/profile-displayphoto-shrink_100_100/0/1584320145264?e=1655942400&v=beta&t=vE_ofG5EbLV8urPJAfKbTCtskh7X9FPlEeTFw6DikPE><div class="kapsa"><h3>JAMES BROWN</h3><h4>BACKEND DEVELOPER</h4></div><label>FOLLOW</label>
+		</div>
+	</div>
+
+	<div class="card" style="--delay:1;">
+		<div class="content">
+			<img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGsEk7g-nQjg/profile-displayphoto-shrink_100_100/0/1575891316341?e=1655942400&v=beta&t=2AdbRAMMeTVPaW_TKPnWF92bPzRxtAUuTtNidh07Qx0"><div class="kapsa"><h3>ALEX DUNCAN</h3><h4>AWS DEVOPS</h4></div><label>FOLLOW</label>
+		</div>
+	</div>
+
+	<div class="card" style="--delay:2;">
+		<div class="content">
+			<img src="https://media-exp1.licdn.com/dms/image/C4D0BAQE3aOp3cdsq6A/company-logo_200_200/0/1641456287876?e=2147483647&v=beta&t=EQB1wMGJ4KchW8RtWR3OC1CbyHWqMuECvvgcw3knimI"><div class="kapsa"><h3>CLARUSWAY</h3><h4>BOOTCAMP</h4></div><label>FOLLOW</label>
+		</div>
+	</div>
+
+	<div class="card" style="--delay:2;">
+		<div class="content">
+			<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGYTfDVuTekdw/profile-displayphoto-shrink_100_100/0/1646331015779?e=1655942400&v=beta&t=8bqDoc3bzPBPcly_gOBgePB5eS8N1f8jpT1T2X_Uz2k"><div class="kapsa"><h3>KAAN ŞAHİN</h3><h4>WEP DEVELOPER</h4></div><label>FOLLOW</label>
+		</div>
+	</div>
+</div>
+</body>
+</html>
